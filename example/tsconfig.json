@@ -1,0 +1,17 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "paths": {
+      "react-native": [
+        "./node_modules/react-native-harmony"
+      ],
+      "react-native-touch-through-view": [
+        "./node_modules/@react-native-ohos/react-native-touch-through-view"
+      ],
+    },
+  },
+  "exclude": [
+    "harmony"
+  ]
+}

@@ -1,4 +1,4 @@
-import TouchThroughView from './components/TouchThroughView'
+import TouchThroughView from './components/TouchThroughView';
 import TouchThroughWrapper from './components/TouchThroughWrapper';
 
-export {TouchThroughView, TouchThroughWrapper}
+export { TouchThroughView, TouchThroughWrapper };

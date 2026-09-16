@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-touch-through-view",
+        "License": "MIT License",
+        "License File": "https://github.com/simonhoss/react-native-touch-through-view/blob/master/package.json#L24",
+        "Version Number": "1.2.0-beta.1",
+        "Owner" : "panjinling@huawei.com",
+        "Upstream URL": "https://github.com/simonhoss/react-native-touch-through-view",
+        "Description": "React Native Touch Through View is a simple component library that allows for scroll views and table views to scroll over interactable content without poor performing size and bounds animations."
+    }
+]
