@@ -1,0 +1,10 @@
+{
+  "name": "@react-native-ohos/react-native-touch-through-view",
+  "version": "1.2.1-beta.1",
+  "description": "HarmonyOS port of react-native-touch-through-view.",
+  "main": "./src/main/ets/Index.ets",
+  "license": "MIT",
+  "dependencies": {
+    "@rnoh/react-native-openharmony": "0.82.30"
+  }
+}

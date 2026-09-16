@@ -1,29 +1,79 @@
 {
-  "name": "react-native-touch-through-view",
-  "version": "1.2.0-beta.0",
-  "description": "React Native Touch Through View is a simple component library that allows for scroll views and table views to scroll over interactable content without poor performing size and bounds animations.",
+  "name": "@react-native-ohos/react-native-touch-through-view",
+  "version": "1.2.1-beta.1",
+  "description": "HarmonyOS port of react-native-touch-through-view.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "components",
+    "specs",
+    "harmony/touch_through_view.har",
+    "harmony/touch_through_view/src/main/cpp",
+    "harmony/touch_through_view/src/main/ets",
+    "harmony/touch_through_view/src/main/index.ets",
+    "harmony/touch_through_view/src/main/module.json5",
+    "harmony/touch_through_view/src/main/resources",
+    "harmony/touch_through_view/oh-package.json5",
+    "harmony/touch_through_view/build-profile.json5",
+    "harmony/touch_through_view/hvigorfile.ts",
+    "harmony/touch_through_view/obfuscation-rules.txt",
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "README_en.md",
+    "README.OpenSource",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/simonhoss/react-native-touch-through-view.git"
+    "url": "https://github.com/react-native-oh-library/react-native-touch-through-view.git"
   },
-  "peerDependencies": {
-    "prop-types": "^15.5.10",
-    "react": ">=15.4.0",
-    "react-native": ">=0.47"
+  "homepage": "https://github.com/react-native-oh-library/react-native-touch-through-view",
+  "bugs": {
+    "url": "https://github.com/react-native-oh-library/react-native-touch-through-view/issues"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "keywords": [
     "react-native",
-    "scrollview",
+    "harmonyos",
+    "openharmony",
+    "rnoh",
+    "ohos",
     "pointer-events",
-    "component"
+    "touch-through"
   ],
-  "author": "Marton Bodonyi",
-  "maintainers": [
-    "Simon Hoss"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/simonhoss/react-native-touch-through-view/issues"
+  "harmony": {
+    "alias": "react-native-touch-through-view",
+    "codegenConfig": {
+      "specPaths": [
+        "./specs"
+      ],
+      "version": 2
+    },
+    "autolinking": {
+      "etsPackageClassName": "TouchThroughViewPackage",
+      "cppPackageClassName": "TouchThroughViewPackage",
+      "cmakeLibraryTargetName": "rnoh_touch_through_view",
+      "ohPackageName": "@react-native-ohos/react-native-touch-through-view"
+    }
   },
-  "homepage": "https://github.com/simonhoss/react-native-touch-through-view"
+  "scripts": {
+    "codegen-lib": "react-native codegen-lib-harmony --no-safety-check --npm-package-name react-native-touch-through-view --cpp-output-path ./harmony/touch_through_view/src/main/cpp/generated --ets-output-path ./harmony/touch_through_view/src/main/ets/generated --cpp-components-spec-paths ./specs",
+    "pack": "npm pack"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.5.10",
+    "react": ">=18",
+    "react-native": ">=0.72"
+  },
+  "devDependencies": {
+    "@rnoh/react-native-harmony-cli": "npm:@react-native-oh/react-native-harmony-cli@^0.0.27",
+    "react": "^19.1.1",
+    "react-native": "^0.82.0"
+  }
 }

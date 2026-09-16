@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "touch_through_view",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}
