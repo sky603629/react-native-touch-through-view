@@ -67,6 +67,7 @@
     "pack": "npm pack"
   },
   "peerDependencies": {
+    "prop-types": "^15.5.10",
     "react": ">=18",
     "react-native": ">=0.72"
   },
